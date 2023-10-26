@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href ="css/style.css">        
+    </head>
+    
+    <body>
+        <form name="f1" id="f1" method="post">
+            <!-- header -->
+            <div class="rowhead" id="col_header">
+                <div class="checkbox">
+                    <input class="checkAll" type="checkbox" onchange="fnCheckAll(this)"/>          
+                </div>
+                <div >
+                    <div class="clear header"><span class='delHead''>Delete</span></div>          
+                </div>
+                <div class="product header">
+                    <span>Product</span>
+                </div>
+                <div class="price header">
+                    <span>Price</span>
+                </div>
+                <div class="quantity header">
+                    <span>Quantity</span>
+                </div>
+                <div class="total header">
+                    <span>Total</span>
+                </div>
+            </div>
+            <!-- body -->
+            <div class="row">
+                <div class="checkbox">
+                    <input type="checkbox"/>          
+                </div>
+                <div class="remove"><span id="vi" class="delete" onclick="DeleteItem">Delete</span></div>
+                <div class="product">
+                    <span>Item 1</span>
+                </div>
+                <div class="price">
+                    <span>10.5$</span>
+                </div>
+                <div class="quantity">
+                    <input type="number" value="1" min="1" onchange="fnUpdateAmountItem(this)"/>
+                </div>
+                <div class="total">
+                    <span>30.5$</span>
+                </div>
+                
+            </div>
+            
+            <div class="row">
+                <div class="checkbox">
+                    <input type="checkbox"/>          
+                </div>
+                <div class="remove"><span class="delete">Delete</span></div>
+                <div class="product">
+                    <span>Item 2</span>
+                </div>
+                <div class="price">
+                    <span>20.5$</span>
+                </div>
+                <div class="quantity">
+                    <input type="number" value="1" min="1" onchange="fnUpdateAmountItem(this)"/>
+                </div>
+                <div class="total">
+                    <span>30.5$</span>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="checkbox">
+                    <input type="checkbox"/>          
+                </div>
+                <div class="remove"><span class="delete">Delete</span></div>
+                <div class="product">
+                    <span>Item 3</span>
+                </div>
+                <div class="price">
+                    <span>30.5$</span>
+                </div>
+                <div class="quantity">
+                    <input type="number" value="1" min="1" onchange="fnUpdateAmountItem(this)"/>
+                </div>
+                <div class="total">
+                    <span>30.5$</span>
+                </div>
+                
+            </div>
+            <!-- footer -->
+            <div class="rowhead" id="col_header">
+                <div class="checkbox">
+                    <input class="checkAll" type="checkbox" onchange="fnCheckAll(this)">          
+                </div>
+                <div >
+                    <div class="clear header"><span class='delHead'>Delete</span></div> 
+                </div>
+                <div class="product header">
+                    
+                </div>
+                <div class="price header">
+                    
+                </div>
+                <div class="quantity header">
+                    <span>Total</span>
+                </div>
+                <div class="total header">
+                    <span id="grandtotal">$</span>
+                </div>
+            </div>
+        </form>
+        <script src="js/app.js"></script>
+    </body>
+</html>
